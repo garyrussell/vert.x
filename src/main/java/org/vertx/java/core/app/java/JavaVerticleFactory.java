@@ -22,9 +22,9 @@ public class JavaVerticleFactory implements VerticleFactory {
     // Out of the box busmods are ok though
     ClassLoader system = ClassLoader.getSystemClassLoader();
     ClassLoader appCL = clazz.getClassLoader();
-    if (!main.startsWith("org.vertx.java.busmods") && (appCL == cl.getParent() || (system != null && appCL == system))) {
-      throw new IllegalStateException("Do not add application classes to the vert.x classpath");
-    }
+//    if (!main.startsWith("org.vertx.java.busmods") && (appCL == cl.getParent() || (system != null && appCL == system))) {
+//      throw new IllegalStateException("Do not add application classes to the vert.x classpath");
+//    }
 
     return verticle;
 
